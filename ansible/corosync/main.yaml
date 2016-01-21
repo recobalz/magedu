@@ -1,0 +1,6 @@
+- name: install corosync
+  remote_user: root
+  hosts: web
+  roles:
+    - common
+    - ha

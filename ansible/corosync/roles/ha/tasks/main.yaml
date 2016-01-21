@@ -1,0 +1,17 @@
+- name: installed corosync and pacemaker
+  yum: name={{ item }} state=present
+  with_items:
+    - corosync
+    - pacemaker
+  tags: inst
+- name: auth key file
+  copy: scr=authkey dest=/etc/corosync/authkey ower=root group=root mode=0400
+  tags: authkey
+- name: configuration file
+  copy: src=corosync.conf dest=/etc/corosync/corosync.conf
+  tags: conf
+  notify:
+    - restart corosync
+- name: start corosync
+  service: name=corosync state=started enabled=no
+  tags: start

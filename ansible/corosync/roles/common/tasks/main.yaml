@@ -1,0 +1,8 @@
+- name: host file
+  copy: src=hosts dest=/etc/hosts
+#- name: sync time
+#  cron: name="sync time" hours="*/5" job="/usr/bin/ntpdata 202.120.2.101"
+- name: rm repo
+  shell: rm /etc/yum.repos.d/*.repo -f
+- name: user repo
+  copy: src=local.repo dest=/etc/yum.repos.d/local.repo

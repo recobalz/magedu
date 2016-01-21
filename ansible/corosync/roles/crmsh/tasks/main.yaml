@@ -1,0 +1,11 @@
+- name: copy crmsh
+  copy: src={{ item }} dest=/tmp/
+  with_items:
+    - crmsh-1.2.6-4.el6.x86_64.rpm
+    - pssh-2.3.1-2.el6.x86_64.rpm
+- name: install crmsh
+  yum: name={{ item }} state=present
+  with_items:
+    - /tmp/pssh-2.3.1-2.el6.x86_64.rpm
+    - /tmp/crmsh-1.2.6-4.el6.x86_64.rpm
+  tags: crmsh
