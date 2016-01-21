@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -e "127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4\n::1         localhost localhost.localdomain localhost6 localhost6.localdomain6\n192.168.31.8    lxc.xxx.com     lxc\n" > /etc/hosts.bak
+for i in {1..6}
+do
+ lxc-info -n centos$i |grep IP |awk {'print $2'} >>/tmp/ip.tt
+ echo "centos$i.xxx.com	centos$i" >>/tmp/domainame.tt
+ paste /tmp/ip.tt /tmp/domainame.tt >>/etc/hosts.bak
+ rm -f /tmp/*.tt
+done
+

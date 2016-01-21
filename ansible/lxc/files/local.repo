@@ -1,0 +1,12 @@
+[base]
+name=Centos disk
+baseurl=http://192.168.31.8/x86/
+	http://mirrors.163.com/centos/$releaseve/os/$basearch/
+	file:///mnt/cdrom/
+enabled=1
+gpgcheck=0
+[epel]
+name=epel
+baseurl=http://mirrors.sohu.com/fedora-epel/6/$basearch/
+enabled=1
+gpgcheck=0

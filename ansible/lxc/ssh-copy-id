@@ -1,0 +1,12 @@
+#!/bin/bash
+for i in `grep 192 /etc/ansible/hosts.tmp |awk {'print $1'}`
+do
+/usr/bin/expect <<!
+set timeout 30
+spawn ssh-copy-id -i /root/.ssh/id_rsa.pub root@$i
+expect ":"
+send "123.com\r"
+expect eof
+!
+echo $i has been keyed!
+done

@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in {1..10}
+do
+  lxc-start -n centos$i -d
+done

@@ -1,0 +1,14 @@
+#!/bin/bash
+for i in {1..6}
+do
+/usr/bin/expect <<!
+set timeout 30
+spawn chroot /var/lib/lxc/centos$i/rootfs passwd
+expect ":"
+send "123.com\r"
+expect ":"
+send "123.com\r"
+expect eof
+!
+echo $i has been keyed!
+done
