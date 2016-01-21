@@ -1,7 +1,7 @@
 [base]
 name=Centos $releasever $basearch dvd1
-#baseurl=http://192.168.97.175:808/x86/
-baseurl=http://mirrors.163.com/centos/$releasever/extras/$basearch/
+baseurl=http://192.168.97.175:808/x86/
+#baseurl=http://mirrors.163.com/centos/$releasever/extras/$basearch/
 enabled=1
 gpgcheck=0
 [baseextras]

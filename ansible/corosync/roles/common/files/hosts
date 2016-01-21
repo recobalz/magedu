@@ -1,6 +1,7 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-192.168.97.186	R1.xxx.com	R1
-192.168.97.126	R2.xxx.com	R2
+192.168.97.175	lxc.xxx.com	lxc
+192.168.97.205	R1.xxx.com	R1
+192.168.97.206	R2.xxx.com	R2
 192.168.97.184	R3.xxx.com	R3
 192.168.97.175	lxc.xxx.com	lxc

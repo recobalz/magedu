@@ -2,6 +2,6 @@
   remote_user: root
   hosts: web
   roles:
-#    - common
-#    - ha
-    - crmsh
+    - common
+    - ha
+#    - crmsh

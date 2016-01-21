@@ -1,2 +1,4 @@
+- name: restart peacemaker
+  service: name=peacmaker state=restarted
 - name: restart corosync
   service: name=corosync state=restarted
