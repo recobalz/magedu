@@ -1,0 +1,1170 @@
+<!doctype html>
+<!-- Server: sfs-consume-14 -->
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta id="project_name" name="project_name" content="nmon">
+
+        
+        <meta name="description" content="nmon is short for Nigel&#39;s Performance Monitor It either shows you the stats on screen updating once a second or saves the data to a CSV file for …">
+        <meta name="keywords" content="Systems Administration, Benchmark,  Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
+<noscript>
+    <meta http-equiv="refresh" content="5; url=http://downloads.sourceforge.net/project/nmon/nmon_linux_14i.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fnmon%2Ffiles&amp;ts=1453362953&amp;use_mirror=jaist">
+</noscript>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Download nmon for Linux from SourceForge.net</title>
+        <link rel="shortcut icon" href="//a.fsdn.com/con/img/sftheme/favicon.ico">
+        
+
+<!-- CCM Tag -->
+<script type="text/javascript">
+  //ccm informer
+/*jshint ignore:start*/
+    (function(f,i,c){var a=decodeURIComponent,e="",l="",o="||",g=";;",h="split",b="length",j="indexOf",k=0,n="localStorage",m="_ccmdt";f[c]=f[c]||{};function d(q){var p;if(f[n]){return f[n][q]||""}else{p=i.cookie.match(q+"=([^;]*)");return(p&&p[1])||""}}f[c].us={};e=a(d(m))[h](o);k=e[b];if(k>0){while(k--){l=e[k][h]("=");if(l[b]>1){if(l[1][j](g)>-1){f[c].us[l[0]]=l[1][h](g);f[c].us[l[0]].pop()}else{f[c].us[l[0]]=l[1]}}}}})(window,document,"_ml");
+/*jshint ignore:end*/
+
+  //ccm tag
+  (function () {
+    /*global _ml:true, window */
+    _ml = window._ml || {};
+    _ml.eid = '771';
+    _ml.ht = 'shex';
+    _ml.informer = {
+      enable: true
+    };
+    var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+    mltag.type = 'text/javascript'; mltag.async = true;
+    mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+    s.parentNode.insertBefore(mltag, s);
+  })();
+</script>
+<!-- End CCM Tag -->
+
+    <link rel="canonical" href="http://sourceforge.net/projects/nmon/">
+        
+        <script type="text/javascript">
+            /*global unescape, window, console, jQuery, $, net, SF, DD_belatedPNG, ga */
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            SF.Ads = {};
+            SF.cdn = '//a.fsdn.com/con';
+            SF.deploy_time = '1453314804';
+        </script>
+        <script src="//a.fsdn.com/con/js/min/sf.head.js?1453314804" type="text/javascript"></script>
+        
+<!--[if lt IE 7 ]>
+  <script src="//a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+<![endif]-->
+ 
+<link rel="stylesheet" href="//a.fsdn.com/con/css/download.css?1453314804" type="text/css">
+<style type="text/css">
+    .Rd2d6b70d6f89b284ea4a0f47f0dcb5d1027122a3 { display: none !important; }
+</style>
+
+  
+
+    <style type="text/css" >.sfdl { width:150px;height:28px;padding:0;position:relative;font:bold 12px/1.17 sans-serif !important; border:1px solid #aaa;display:inline;float:left;text-decoration:none;-moz-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-webkit-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-o-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background:no-repeat #e5e5e5 8px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff), color-stop(100%, #ccc));background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -moz-linear-gradient(top, #fff 0%, #ccc 100%);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), linear-gradient(top, #fff 0%, #ccc 100%);background-position:8px center, 0 0;margin:0 10px 0px 0;overflow:hidden;color:#555 !important;}.sfdl:hover { cursor:pointer;text-decoration:none;background:8px center no-repeat #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);}.sfdl-lite { background:0 center no-repeat #337733 none;color:white !important;height:auto;padding:0.5em 1em;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #339933), color-stop(100%, #337733));background-image:-moz-linear-gradient(top, #339933 0%, #337733 100%);background-image:linear-gradient(top, #339933 0%, #337733 100%);}.sfdl-lite:hover { background:0 center no-repeat #339933;}.sfdl span { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display:block;margin:3px;margin-left:35px;padding:4px;text-align:left;color:#FFF;background:#363;background-image:-moz-linear-gradient(center top, #393 0%, #373 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #393),color-stop(1, #373));background-image:linear-gradient(top, #393 0%, #373 100%);overflow:hidden;height:14px;}.sfdl b { display:block;line-height:7.0px;}.sfdl small { display:block;line-height:7.0px;color:#ADC2AD; font-weight:normal;white-space:nowrap;overflow:hidden;font-size:77%;}.info-circle{ right:10px;bottom:16px;}.direct-dl{ font-size:10px;text-align:right;display:inline-block;width:100%;}</style>
+
+
+        
+<script type="text/javascript">
+    SF.adblock = true;
+    var immersion_adcode = "";
+</script>
+  <script type='text/javascript'>
+
+   (function() {
+         var useSSL = 'https:' === document.location.protocol;
+         var src = (useSSL ? 'https:' : 'http:') +
+               '//www.googletagservices.com/tag/js/gpt.js';
+         document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+   })();
+   </script>
+
+   <!-- GPT Slot Definitions -->
+   <script type='text/javascript'>
+       /*global googletag */
+       var gptadslots=[];
+       var gptadHandlers={};
+       googletag.cmd.push(function() {
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_728x90_A', [728, 90], 'div-gpt-ad-1392148432530-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Dwnld_immersion_700x500', [700, 500], 'div-gpt-ad-1392148432589-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '700x500')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_300x250_A', [300, 250], 'div-gpt-ad-1392148432580-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_728x90_B', [728, 90], 'div-gpt-ad-1392148432597-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_728x90_A', [728, 90], 'div-gpt-ad-1392148432591-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_728x90_B', [728, 90], 'div-gpt-ad-1392148432592-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_300x250_A', [300, 250], 'div-gpt-ad-1392148432593-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_300x250_B', [300, 250], 'div-gpt-ad-1392148432594-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_multi_A', [[728, 90], [300, 250], [336, 280]], 'div-gpt-ad-1392148432595-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '728x90,300x250,336x280')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_300x450_A', [300, 450], 'div-gpt-ad-1431036742251-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '300x450')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_622x297_A', [622, 297], 'div-gpt-ad-1431036742250-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '622x297')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Mobile_DLP_300x50_A', [300, 50], 'div-gpt-ad-3392148208795-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '300x50')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Mobile_DLP_300x50_B', [300, 50], 'div-gpt-ad-3392148208796-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '300x50')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Mobile_DLP_300x250_A', [300, 250], 'div-gpt-ad-3392148208797-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Left_150x1060', [150, 1060], 'div-gpt-ad-139343511-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Right_150x1060', [150, 1060], 'div-gpt-ad-139343512-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['nmon', 'sysadministration', 'c', 'benchmark', 'system'])
+                                                        .setTargeting('shortname', 'nmon')
+                                                        .setTargeting('aud', ['enduser_advanced', 'sysadmins', 'developers'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/nmon/files/nmon_linux_14i.tar.gz/download')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_download'));
+            
+            googletag.pubads().enableSyncRendering();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+            googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                var unitName = event.slot.getName();
+                if ( unitName in gptadHandlers ) {
+                   try {
+                       SF.Ads.RenderHandlers[gptadHandlers[unitName]].call(this, event);
+                   } catch (e) {
+                   }
+                }
+            });
+            
+        });
+   </script>
+
+        
+        <script type="text/javascript" src="//a.fsdn.com/con/js/adframe.js?1453314804"></script>
+        <script type="text/javascript">
+
+            /*jshint ignore:start*/
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            /*jshint ignore:end*/
+
+            //var $ = jQuery.noConflict(); // jshint ignore:line
+        </script>
+        <script type="text/javascript">
+                ga('create', 'UA-36130941-1', {'name': '1'});
+                ga('create', 'UA-36130941-1', 'auto');
+            if (typeof _ml !== 'undefined' && _ml.us) {
+                if (_ml.us.tp && _ml.us.tp.length > 0) {
+                    ga('set', 'dimension2', _ml.us.tp[0]);
+                }
+                if (_ml.us.pc && _ml.us.pc.length > 0) {
+                    ga('set', 'dimension7', _ml.us.pc[0]);
+                }
+                ga('set', 'dimension3', _ml.us.ind);
+                ga('set', 'dimension4', _ml.us.cr);
+                ga('set', 'dimension5', _ml.us.cs);
+                ga('set', 'dimension6', _ml.us.dm);
+                ga('set', 'dimension8', _ml.us.sn);
+            }
+            
+                ga('set', 'dimension9', 'nmon');
+                ga('set', 'dimension10', 'pg_dwnld');
+                ga('set', 'dimension11', '/nmon_linux_14i.tar.gz');
+                    
+                ga('set', 'dimension13', 'Logged Out');
+                ga('set', 'dimension14', 'No');  
+                ga('set', 'dimension15', 'desktop');
+                ga('send', 'pageview');
+
+            
+        </script>
+<script type="text/javascript" src="//a.fsdn.com/con/js/madmen.js?1453314804"></script>
+<script type="text/javascript">
+    
+    SF.Ads.AdtemplateImpression = false;
+    
+
+    SF.Ads.FallbackTemplateName = 'template5';
+
+    SF.Ads.wireWindowOnError();
+    SF.geoCountryCode = 'CN';
+</script>
+
+    </head>
+    <body id="pg_dwnld" class="bluesteel">
+        
+
+
+
+
+
+    
+
+<div id="SF_Dwnld_immersion_700x500_wrapped" class="ad immersion ad_wrapped " data-unit="SF_Dwnld_immersion_700x500">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432589-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432589-0');
+        });
+    }
+}());
+</script>
+</div>
+<script type="text/javascript">
+SF.Ads.recordImmersionCall('#p77_immersion script[src*="ad.doubleclick.net"]', immersion_adcode, true);
+</script>
+        <div id="busy-spinner"></div>
+        
+<header id="site-header">
+    <div class="wrapper">
+        <a href="/" class="logo">
+            <span>SourceForge</span>
+        </a>
+        <form method="get" action="/directory/">
+            <input type="text" id="words" name="q" placeholder="Search">
+        </form>
+        <!--Switch to {language}-->
+        <nav id="nav-site">
+            <a href="/directory/" title="Browse our software.">Browse</a>
+            <a href="/directory/enterprise" title="Browse our Enterprise software.">Enterprise</a>
+            <a href="/blog/" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="/jobs?source=header" title="Search 80k+ tech jobs.">Jobs</a>
+            <a href="//deals.sourceforge.net/?utm_source=sourceforge&amp;utm_medium=navbar&amp;utm_campaign=homepage" title="Discover and Save on the Best Gear, Gadgets, and Software" class="featured-link" target="_blank">Deals</a>
+            <a href="/support" title="Contact us for help and feedback.">Help</a>
+        </nav>
+        <nav id="nav-account">
+            
+              <div class="logged_out">
+                  <a href="https://sourceforge.net/auth/">Log In</a>
+                <span>or</span>
+                <a href="https://sourceforge.net/user/registration">Join</a>
+              </div>
+            
+        </nav>
+    </div>
+</header>
+<header id="site-sec-header">
+    <div class="wrapper">
+        <nav id="nav-hubs">
+            <h4>Solution Centers</h4>
+            <a href="http://goparallel.sourceforge.net/">Go Parallel</a>
+        </nav>
+        <nav id="nav-collateral">
+
+            <a href="http://library.slashdotmedia.com/?source=sfnet_header">Resources</a>
+
+            
+            <a href="https://sourceforge.net/user/registration">Newsletters</a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        
+<div id="banner-ads" class="ads">
+    
+
+
+
+    
+
+<div id="SF_Temp1_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_Temp1_728x90_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    immersionCompliment = true;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432530-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432530-0');
+        });
+    }
+}());
+</script>
+</div>
+    
+
+
+
+    
+
+<div id="SF_Temp5_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_Temp5_728x90_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432591-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432591-0');
+        });
+    }
+}());
+</script>
+</div>
+</div>
+<header id="page-header">
+
+    <div class="wrapper">
+        
+        
+
+
+<div id="downloading" class="project-mirror">
+    <div id="starting" >
+        <h1>
+                <a href="/projects/nmon/">nmon for Linux</a>
+        </h1>
+
+        
+<p id="downloader" class="">
+    Your download will start shortly...
+</p>
+
+<script id="redirect-template" type="text/x-handlebars-template">
+Learn more: check out <a href="/projects/nmon/postdownload">screenshots, reviews, and more</a>. We'll take you there in a few moments.
+</script>
+<p id="problems">
+
+
+    Problems with the download?  Please use this 
+    <a href="http://downloads.sourceforge.net/project/nmon/nmon_linux_14i.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fnmon%2Ffiles&amp;ts=1453362953&amp;use_mirror=jaist" class="direct-download">
+direct link</a>, or try another 
+    <a href="/settings/mirror_choices?projectname=nmon&amp;filename=nmon_linux_14i.tar.gz"
+        title="A mirror is an exact copy of a download available in multiple locations around the world.  Select the one closest to your location."
+        class="mirror" data-release-url="http://downloads.sourceforge.net/project/nmon/nmon_linux_14i.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fnmon%2Ffiles&amp;ts=1453362953&amp;use_mirror=jaist" rel="nofollow">
+mirror</a>.
+</p>
+
+    </div>
+    <div id="mirror">
+        Mirror provided by: 
+    
+      
+      
+      <a id="provider_top" href="http://www.jaist.ac.jp/" title="Japan Advanced Institute of Science and Technology"><img class="mirror-logo" src="http://a.fsdn.com/mirrorimages/jaist-small.png" alt="Japan Advanced Institute of Science and Technology" width="100" height="41"/></a>
+    
+
+    </div>
+    
+</div>
+<div id="mirror-drawer"></div>
+
+        
+    </div>
+        
+
+</header>
+        
+<div id="messages">
+</div>
+
+
+
+        <div id="page-body">
+            <div id="bookends_container">
+                
+
+
+
+    
+
+<div id="SF_Bookend_Left_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Left_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343511-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343511-0');
+        });
+    }
+}());
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Bookend_Right_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Right_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343512-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343512-0');
+        });
+    }
+}());
+</script>
+</div>
+            </div>
+
+
+<div id="content-immersion" class="content">
+    <div class="ads">
+        <div id="immersion-container" class="ad immersion">
+            <script type="text/javascript">
+                document.write(immersion_adcode);
+                SF.Ads.wireWrapperResize('.ad.wrapper', '#content-immersion');
+            </script>
+        </div>
+    </div>
+    
+    
+<div class="sidebar template1">
+    
+
+    
+        <div class="recommended-widget">
+            <aside class="sidebar-widget">
+        <header>
+        <h3>Recommended Projects</h3>
+        </header>
+    <ul class="vertical">
+        
+
+        
+
+            
+                <li class="item odd">
+                <a href="/projects/jnmonanalyser/?source=recommended" title="Java Nmon Analyser"><img alt="Icon" src="//a.fsdn.com/con/img/project_default.png" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="/projects/jnmonanalyser/?source=recommended"
+                        title="Learn more about Java Nmon Analyser ">Java Nmon Analyser</a>
+                        <div class="summary">
+                        
+                        </div>
+                    </div>
+
+            </li>
+            
+                <li class="item even">
+                <a href="/projects/nmon-webifier/?source=recommended" title="NMON data gatherer and web front-end"><img alt="Icon" src="//a.fsdn.com/con/img/project_default.png" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="/projects/nmon-webifier/?source=recommended"
+                        title="Learn more about NMON data gatherer and web front-end ">NMON data gatherer and web front-end</a>
+                        <div class="summary">
+                        
+                        </div>
+                    </div>
+
+            </li>
+            
+                <li class="item odd last">
+                <a href="/projects/sarmon/?source=recommended" title="nmon for solaris"><img alt="Icon" src="//a.fsdn.com/allura/p/sarmon/icon" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="/projects/sarmon/?source=recommended"
+                        title="Learn more about nmon for solaris ">nmon for solaris</a>
+                        <div class="summary">
+                        
+                        </div>
+                    </div>
+
+            </li>
+            
+        
+    </ul>
+</aside>
+
+        </div>
+        
+</div>
+
+    
+</div>
+
+
+
+
+
+
+
+
+<div id="content-for-adblock" class="content with-sidebar fallback-templates">
+    <div id="template7-container">
+
+    <div class="template7 internal-subst altered">
+      
+     <div class="dlp_newsletter_subscribe">
+         <h3>Keep Me Updated</h3>
+         <span class="subscribe-tagline">Get project updates, sponsored content from our
+             <br/>select partners and more.</span>
+         
+
+<form action="https://sourceforge.net/user/newsletters/subscribe?source=DLP_T7" method="post" class="newsletter-subscribe-form ">
+    <input type="hidden" name="Xq_5WBoslPz4JYSEV0znXGiwRCg0" value="/user/newsletters/thankyou">
+    <input type="hidden" name="Xr:9cF4wjKCQif1_uG:97Wqbqmrc" value="CN">
+    <input type="hidden" name="XsO9cF4wjKCQif1_uG80Zqn4zRA0" value="ip_address">
+    <input type="hidden" name="Xpf9cF5A0PyBsg50hw01NlSYkA5c" value="DLP_T7">
+    <input type="hidden" name="XrPpSDoszOykYQ0LvDecGsXZQuMU" class="email_validate_result">
+    <input type="hidden" value="https://sourceforge.net/user/newsletters/validate_email" class="email_validate_endpoint">
+
+    <div class="subtext">
+        By clicking on "Follow" below, you are agreeing to the <a href="http://slashdotmedia.com/terms-of-use/">Terms of Use</a> and the <a href="http://slashdotmedia.com/privacy-statement/">Privacy Policy</a>.
+    </div>
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="sitewide">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="research">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="events">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="thirdparty">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="all">
+        <input type="hidden" name="XoOdeF59GxfDWoe:tLr8P4fSPYOk" value="nmon">
+    
+
+
+    <div class="row">
+        
+        <div class="nsw-error-container input-set small-12 medium-8 columns tightest">
+            <div class="error-message"><i>Invalid email address. Please try again.</i></div>
+            <input type="email" class="subscriber-email" name="XpuleA4s7J0zisZs3obU66G5l2KY" placeholder="Enter your email address" value="" required>
+        </div>
+        
+        
+
+        <p class="subscriber-existing-email" style="display: none"> Sent to None.
+        
+        </p>
+
+        <button type="submit" class="subscriber-submit  small-12 medium-4 right columns tightest">
+            <span>
+                Follow
+            </span>
+        </button>
+    </div>
+
+    <input type="hidden" name="_visit_cookie" value="56a08f092d82e31a14c73170"/>
+    <input type='hidden' name='timestamp' value='1453362953'/>
+    <input type='hidden' name='spinner' value='Xo4wzYuJXWl19HDCKfpJqxQtBJ2g'/>
+    <p class='Rd2d6b70d6f89b284ea4a0f47f0dcb5d1027122a3'><label for='XpORcDIcuam0ADa8n1S:14ltsQkw'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpORcDIcuam0ADa8n1S:14ltsQkw' name='XpeRcDIcuaiBsg50hw01NlSYkA5c' type=
+             'text'/></p>
+    <p class='Rd2d6b70d6f89b284ea4a0f47f0dcb5d1027122a3'><label for='XpORcDIcuamwADa8n1S:14ltsQkw'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpORcDIcuamwADa8n1S:14ltsQkw' name='XpeRcDIcuayBsg50hw01NlSYkA5c' type=
+             'text'/></p>
+</form>
+
+
+     </div>
+
+      <div id='internal-reg-ad'>
+        <a href="//sourceforge.net/user/registration/?source=internal_ad_on_dlp">
+          <img src="//a.fsdn.com/con/img/NS_622x297.jpg" alt='register'/>
+        </a>
+      </div>
+    
+    
+    <div class="top3-widget">
+        <aside class="sidebar-widget">
+        <header>
+        <h3>Top 3 Projects in Systems Administration</h3>
+        </header>
+    <ul class="vertical">
+        
+
+        
+
+            
+                <li class="item odd">
+                <a class="horiz-proj-icon" href="/projects/ubuntuzilla/?source=top3_dlp_t7"
+                        title="Ubuntuzilla: Mozilla Software Installer"><img alt="Icon" src="//a.fsdn.com/con/icons/ub/ubuntuzilla%40sf.net/ubuntuzilla_default.png" /></a>
+                <div class="pinfo-content top3_dlp_t7">
+                <a class="project-name" href="/projects/ubuntuzilla/?source=top3_dlp_t7"
+                        title="Learn more about Ubuntuzilla: Mozilla Software Installer ">Ubuntuzilla: Mozilla Software Installer</a>
+                        <div class="summary">
+                        APT repository for Mozilla software releases
+                        </div>
+                    </div>
+
+            </li>
+            
+                <li class="item even">
+                <a class="horiz-proj-icon" href="/projects/clonezilla/?source=top3_dlp_t7"
+                        title="Clonezilla"><img alt="Icon" src="//a.fsdn.com/allura/p/clonezilla/icon" /></a>
+                <div class="pinfo-content top3_dlp_t7">
+                <a class="project-name" href="/projects/clonezilla/?source=top3_dlp_t7"
+                        title="Learn more about Clonezilla ">Clonezilla</a>
+                        <div class="summary">
+                        A partition and disk imaging/cloning program
+                        </div>
+                    </div>
+
+            </li>
+            
+                <li class="item odd last">
+                <a class="horiz-proj-icon" href="/projects/ophcrack/?source=top3_dlp_t7"
+                        title="ophcrack"><img alt="Icon" src="//a.fsdn.com/allura/p/ophcrack/icon" /></a>
+                <div class="pinfo-content top3_dlp_t7">
+                <a class="project-name" href="/projects/ophcrack/?source=top3_dlp_t7"
+                        title="Learn more about ophcrack ">ophcrack</a>
+                        <div class="summary">
+                        A Windows password cracker based on rainbow tables
+                        </div>
+                    </div>
+
+            </li>
+            
+        
+    </ul>
+</aside>
+
+    </div>
+
+    </div>
+
+    
+<div class="sidebar template7">
+    
+
+    <div class="sidebar template7">
+            <a href="//deals.sourceforge.net/?utm_source=sourceforge&utm_medium=adblock&utm_campaign=dlp&source=internal_ad_on_dlp">
+              <img src="//a.fsdn.com/con/img/AUSF_300x450.jpg" alt='Deals'/>
+            </a>
+    </div>
+
+    
+</div>
+
+    </div>
+</div>
+
+
+
+<div id="content-fallback" class="content with-sidebar fallback-templates">
+    <div id="template5-container">
+
+        
+        <div class="ads template5 altered">
+            
+
+
+
+    
+    
+
+<div id="SF_Temp5_multi_A_wrapped" class="ad multisize  " data-unit="SF_Temp5_multi_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432595-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432595-0');
+        });
+    }
+}());
+</script>
+</div>
+
+
+
+    
+
+<div id="SF_Temp5_622x297_A_wrapped" class="ad   " data-unit="SF_Temp5_622x297_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1431036742250-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1431036742250-0');
+        });
+    }
+}());
+</script>
+</div>
+
+	    
+    
+    <div class="top3-widget">
+        <aside class="sidebar-widget">
+        <header>
+        <h3>Top 3 Projects in Systems Administration</h3>
+        </header>
+    <ul class="vertical">
+        
+
+        
+
+            
+                <li class="item odd">
+                <a class="horiz-proj-icon" href="/projects/ubuntuzilla/?source=top3_dlp_t5"
+                        title="Ubuntuzilla: Mozilla Software Installer"><img alt="Icon" src="//a.fsdn.com/con/icons/ub/ubuntuzilla%40sf.net/ubuntuzilla_default.png" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="/projects/ubuntuzilla/?source=top3_dlp_t5"
+                        title="Learn more about Ubuntuzilla: Mozilla Software Installer ">Ubuntuzilla: Mozilla Software Installer</a>
+                        <div class="top3-project-summary">
+                        APT repository for Mozilla software releases
+                        </div>
+                    </div>
+                    <div class="dl-content top3_dlp_t5">
+                        <a href="/projects/ubuntuzilla/files/latest/download?source=top3_dlp_t5" title="Ubuntuzilla: Mozilla Software Installer" class="sfdl sfdl-lite">Download</a>
+                    </div>
+
+            </li>
+            
+                <li class="item even">
+                <a class="horiz-proj-icon" href="/projects/clonezilla/?source=top3_dlp_t5"
+                        title="Clonezilla"><img alt="Icon" src="//a.fsdn.com/allura/p/clonezilla/icon" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="/projects/clonezilla/?source=top3_dlp_t5"
+                        title="Learn more about Clonezilla ">Clonezilla</a>
+                        <div class="top3-project-summary">
+                        A partition and disk imaging/cloning program
+                        </div>
+                    </div>
+                    <div class="dl-content top3_dlp_t5">
+                        <a href="/projects/clonezilla/files/latest/download?source=top3_dlp_t5" title="Clonezilla" class="sfdl sfdl-lite">Download</a>
+                    </div>
+
+            </li>
+            
+                <li class="item odd last">
+                <a class="horiz-proj-icon" href="/projects/ophcrack/?source=top3_dlp_t5"
+                        title="ophcrack"><img alt="Icon" src="//a.fsdn.com/allura/p/ophcrack/icon" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="/projects/ophcrack/?source=top3_dlp_t5"
+                        title="Learn more about ophcrack ">ophcrack</a>
+                        <div class="top3-project-summary">
+                        A Windows password cracker based on rainbow tables
+                        </div>
+                    </div>
+                    <div class="dl-content top3_dlp_t5">
+                        <a href="/projects/ophcrack/files/latest/download?source=top3_dlp_t5" title="ophcrack" class="sfdl sfdl-lite">Download</a>
+                    </div>
+
+            </li>
+            
+        
+    </ul>
+</aside>
+
+    </div>
+
+            
+     <div class="dlp_newsletter_subscribe">
+         <h3>Keep Me Updated</h3>
+         <span class="subscribe-tagline">Get project updates, sponsored content from our
+             <br/>select partners and more.</span>
+         
+
+<form action="https://sourceforge.net/user/newsletters/subscribe?source=DLP_T5" method="post" class="newsletter-subscribe-form ">
+    <input type="hidden" name="Xq_5WBoslPz4JYSEV0znXGiwRCg0" value="/user/newsletters/thankyou">
+    <input type="hidden" name="Xr:9cF4wjKCQif1_uG:97Wqbqmrc" value="CN">
+    <input type="hidden" name="XsO9cF4wjKCQif1_uG80Zqn4zRA0" value="ip_address">
+    <input type="hidden" name="Xpf9cF5A0PyBsg50hw01NlSYkA5c" value="DLP_T5">
+    <input type="hidden" name="XrPpSDoszOykYQ0LvDecGsXZQuMU" class="email_validate_result">
+    <input type="hidden" value="https://sourceforge.net/user/newsletters/validate_email" class="email_validate_endpoint">
+
+    <div class="subtext">
+        By clicking on "Follow" below, you are agreeing to the <a href="http://slashdotmedia.com/terms-of-use/">Terms of Use</a> and the <a href="http://slashdotmedia.com/privacy-statement/">Privacy Policy</a>.
+    </div>
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="sitewide">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="research">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="events">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="thirdparty">
+        <input type="hidden" name="XqOJWFZE7PykJeUL5A4P1aKD8:E8" value="all">
+        <input type="hidden" name="XoOdeF59GxfDWoe:tLr8P4fSPYOk" value="nmon">
+    
+
+
+    <div class="row">
+        
+        <div class="nsw-error-container input-set small-12 medium-8 columns tightest">
+            <div class="error-message"><i>Invalid email address. Please try again.</i></div>
+            <input type="email" class="subscriber-email" name="XpuleA4s7J0zisZs3obU66G5l2KY" placeholder="Enter your email address" value="" required>
+        </div>
+        
+        
+
+        <p class="subscriber-existing-email" style="display: none"> Sent to None.
+        
+        </p>
+
+        <button type="submit" class="subscriber-submit  small-12 medium-4 right columns tightest">
+            <span>
+                Follow
+            </span>
+        </button>
+    </div>
+
+    <input type="hidden" name="_visit_cookie" value="56a08f092d82e31a14c73170"/>
+    <input type='hidden' name='timestamp' value='1453362953'/>
+    <input type='hidden' name='spinner' value='Xo4wzYuJXWl19HDCKfpJqxQtBJ2g'/>
+    <p class='Rd2d6b70d6f89b284ea4a0f47f0dcb5d1027122a3'><label for='XpORcDIcua20ADa8n1S:14ltsQkw'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpORcDIcua20ADa8n1S:14ltsQkw' name='XpeRcDIcuaiBsg50hw01NlSYkA5c' type=
+             'text'/></p>
+    <p class='Rd2d6b70d6f89b284ea4a0f47f0dcb5d1027122a3'><label for='XpORcDIcua2wADa8n1S:14ltsQkw'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpORcDIcua2wADa8n1S:14ltsQkw' name='XpeRcDIcuayBsg50hw01NlSYkA5c' type=
+             'text'/></p>
+</form>
+
+
+     </div>
+
+
+        </div>
+        
+        
+<div class="sidebar template5">
+    
+
+    
+
+
+
+    
+
+<div id="SF_Temp5_300x250_A_wrapped" class="ad medrec  " data-unit="SF_Temp5_300x250_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432593-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432593-0');
+        });
+    }
+}());
+</script>
+</div>
+        
+
+
+
+    
+
+<div id="SF_Temp5_300x250_B_wrapped" class="ad medrec  " data-unit="SF_Temp5_300x250_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432594-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432594-0');
+        });
+    }
+}());
+</script>
+</div>
+        
+
+
+
+    
+
+<div id="SF_Temp5_300x450_A_wrapped" class="ad   " data-unit="SF_Temp5_300x450_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1431036742251-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1431036742251-0');
+        });
+    }
+}());
+</script>
+</div>
+
+    
+</div>
+
+        
+
+        
+
+
+
+    
+
+<div id="SF_Temp5_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Temp5_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432592-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432592-0');
+        });
+    }
+}());
+</script>
+</div>
+        
+
+        
+
+    </div> 
+</div> 
+
+
+<script type="text/javascript">
+    SF.Ads.postImmersionAd(immersion_adcode, '#content-immersion', '#content-fallback');
+</script>
+
+<div id="wrapper-bottom-banner">
+    
+
+
+
+    
+
+<div id="SF_Temp1_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Temp1_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    immersionCompliment = true;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432597-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432597-0');
+        });
+    }
+}());
+</script>
+</div>
+</div>
+
+
+
+        </div>
+        
+
+          
+<footer id="site-footer">
+    <div class="wrapper">
+        <nav>
+            <h5>SourceForge</h5>
+            <a href="/about">About</a>
+            <a href="/blog/category/sitestatus/">Site Status</a>
+            <a href="http://twitter.com/sfnet_ops">@sfnet_ops</a>
+
+
+        </nav>
+        <nav>
+            <h5>Find and Develop Software</h5>
+            <a href="/create/">Create a Project</a>
+            <a href="/directory/">Software Directory</a>
+            <a href="/top">Top Downloaded Projects</a>
+        </nav>
+        <nav>
+            <h5>Community</h5>
+            <a href="/blog/">Blog</a>
+            <a href="http://twitter.com/sourceforge">@sourceforge</a>
+            <a href="/jobs?source=footer">Job Board</a>
+            <a href="http://library.slashdotmedia.com/?source=sfnet_footer">Resources</a>
+        </nav>
+        <nav>
+            <h5>Help</h5>
+            <a href="http://p.sf.net/sourceforge/docs">Site Documentation</a>
+            <a href="/support">Support Request</a>
+            <a href="http://p.sf.net/sourceforge/irc">Real-Time Support</a>
+            
+        </nav>
+    </div>
+</footer>
+<footer id="site-copyright-footer">
+    <div class="wrapper">
+        <div id="copyright">
+            &copy; 2016 Slashdot Media. All Rights Reserved.<br />
+            <div id="dhi-icon"><span class="logo-DHI-alt"></span></div>
+            <div id="service-text"><div class="smalltext"> SourceForge is a <a href="http://www.dhigroupinc.com" target="_blank">DHI service</a></div></div>
+
+            <!--<div id="dhi-service">SourceForge is a <a href="http://www.dhigroupinc.com">DHI</a> service.</div>-->
+        </div>
+        <nav>
+            <a href="http://slashdotmedia.com/terms-of-use/">Terms</a>
+            <a href="http://slashdotmedia.com/privacy-statement/">Privacy</a>
+            <span id='teconsent'></span>
+            <a href="http://slashdotmedia.com/opt-out-choices/">Opt Out Choices</a>
+
+
+            <a href="http://slashdotmedia.com">Advertise</a>
+            <a href="http://ibmsoftwaredelivery.sourceforge.net/">Software Delivery</a>
+        </nav>
+    </div>
+</footer>
+    <script type="text/javascript">
+          SF.geoIsRestOfWorld = true;
+        if (SF.Ads.isEnterpriseVisitor()) {
+          SF.pspRedirect = false;
+        } else {
+          SF.pspRedirect = true;
+            SF.pdlpRedirect = true; //pdlp trafficking %row is active, and its ROW.
+        }
+
+        if (immersion_adcode) {
+            SF.downloadRedirectDelay = 60000;
+        } else {
+            SF.downloadRedirectDelay = 60000;
+        }
+        SF.ios = false;
+
+        $.extend(SF, {"noCountDown": false, "downloadDelay": 5000, "isIronsourceInstaller": false, "filename": "/nmon_linux_14i.tar.gz", "isWrappedInstall": false, "isPreWrapped": null, "installer": false, "shortname": "nmon", "nowrap": false});
+
+        if (SF.isIronsourceInstaller) {
+          SF.IronsourceSettings.downloadLink = '';
+        }
+        SF.enableEmailVerify = true;
+    </script>
+        <script src="//a.fsdn.com/con/js/min/sf.dwnld.js?1453314804" type="text/javascript"></script>
+    
+
+
+        
+            <script type="text/javascript" src="//consent-st.truste.com/get?name=notice.js&amp;domain=slashdot.org&amp;c=teconsent&amp;text=true"></script>
+            
+    
+
+      </body>
+</html>
