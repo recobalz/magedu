@@ -6,3 +6,5 @@
   shell: rm /etc/yum.repos.d/*.repo -f
 - name: user repo
   copy: src=local.repo dest=/etc/yum.repos.d/local.repo
+- name: clear yum
+  shell: yum clean all
