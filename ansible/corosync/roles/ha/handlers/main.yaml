@@ -1,4 +1,2 @@
-- name: restart peacemaker
-  service: name=peacmaker state=restarted
-- name: restart corosync
-  service: name=corosync state=restarted
+- name: restart ha
+  shell: /etc/init.d/pacemaker restart & /etc/init.d/corosync restart

@@ -11,8 +11,7 @@
   copy: src=corosync.conf dest=/etc/corosync/corosync.conf
   tags: conf
   notify:
-    - restart peacemaker
-    - restart corosync
+    - restart ha
 - name: start pacemaker
   service: name=pacemaker state=started enabled=no
   tags: start

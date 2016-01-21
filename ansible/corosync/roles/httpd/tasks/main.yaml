@@ -1,0 +1,8 @@
+- name: install httpd
+  yum: name=httpd state=present
+- name: echo index
+  shell: echo `ifconfig |grep Bcast |awk {'print $2'} |cut -d':' -f2` > /var/www/html/index.html
+- name: service httpd
+  service: name=httpd state=stopped enabled=no
+
+
