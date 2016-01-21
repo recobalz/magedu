@@ -3,8 +3,11 @@
 #- name: sync time
 #  cron: name="sync time" hours="*/5" job="/usr/bin/ntpdata 202.120.2.101"
 - name: rm repo
-  shell: rm /etc/yum.repos.d/*.repo -f
+  shell: rm -fr /etc/yum.repos.d/*
+  tags: repo
 - name: user repo
   copy: src=local.repo dest=/etc/yum.repos.d/local.repo
+  tags: repo
 - name: clear yum
   shell: yum clean all
+  tags: repo

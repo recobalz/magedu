@@ -1,22 +1,22 @@
 [base]
 name=Centos $releasever $basearch dvd1
-baseurl=file:///mnt/cdrom/
-	http://192.168.97.175:808/x86/
+#baseurl=http://192.168.97.175:808/x86/
+baseurl=http://mirrors.163.com/centos/$releasever/extras/$basearch/
 enabled=1
 gpgcheck=0
 [baseextras]
 name=Centos $releasever $basearch extras
 baseurl=http://mirrors.163.com/centos/$releasever/extras/$basearch/
-enabled=1
+enabled=0
 gpgcheck=0
 [epel]
 name=Centos $releasever $basearch EPEL
 baseurl=http://mirrors.sohu.com/fedora-epel/6/x86_64/
-enabled=1
+enabled=0
 gpgcheck=0
 [rpmfind]
 name=CentOS rpmfind
 baseurl=ftp://fr2.rpmfind.net/linux/dag/redhat/el6/en/x86_64/dag/
-enabled=1
+enabled=0
 gpgcheck=0
 

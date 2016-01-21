@@ -5,7 +5,7 @@
     - pacemaker
   tags: inst
 - name: auth key file
-  copy: scr=authkey dest=/etc/corosync/authkey ower=root group=root mode=0400
+  copy: src=authkey dest=/etc/corosync/authkey owner=root group=root mode=0400
   tags: authkey
 - name: configuration file
   copy: src=corosync.conf dest=/etc/corosync/corosync.conf
