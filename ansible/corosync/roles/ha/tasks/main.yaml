@@ -12,9 +12,6 @@
   tags: conf
   notify:
     - restart ha
-- name: start pacemaker
-  service: name=pacemaker state=started enabled=no
-  tags: start
 - name: start corosync
   service: name=corosync state=started enabled=no
   tags: start

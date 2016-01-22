@@ -1,2 +1,2 @@
 - name: restart ha
-  shell: /etc/init.d/pacemaker restart & /etc/init.d/corosync restart
+  service: name=corosync state=restarted
