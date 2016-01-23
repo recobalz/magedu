@@ -1,0 +1,16 @@
+- name: tar maria
+  shell: tar xf /tmp/rpm/mariadb-5.5.36-linux-x86_64.tar.gz -C /usr/local/;
+- name: ln mysql
+  shell: ln -sv /usr/local/mariadb-5.5.36-linux-x86_64 /usr/local/mysql
+- name: init mysql
+  shell: /usr/local/mysql/scripts/mysql_install_db --user=mysql --basedir=/usr/local/mysql --datadir=/mydata/mariadb &
+  tags: init
+- name: conf
+  copy: src={{ item.file }} dest={{ item.dir }}
+  with_items:
+    - {file: my.cnf,dir: /etc/}
+    - {file: profile,dir: /etc/} 
+    - {file: mysqld,dir: /etc/init.d/}
+  tags: confile
+- name: sourceprofiled
+  shell: source /etc/profile

@@ -1,0 +1,6 @@
+- name: config mysql
+  remote_user: root
+  hosts: coro
+  roles:
+ #   - begin
+   - setup

@@ -1,0 +1,15 @@
+- name: mk group
+  group: name=mysql gid=502 state=present
+- name: mk user
+  user: name=mysql group=mysql uid=502 state=present
+- name: mk datadir
+  shell: mkdir /mydata/mariadb -pv
+- name: mk rpmdir
+  shell: mkdir /tmp/rpm -pv
+- name: chmod datadir
+  shell: chown -R mysql.mysql /mydata
+- name: nfs start
+  service: name=rpcbind state=started enabled=on
+- name: mount data
+  mount: name=/tmp/rpm src=192.168.31.8:/rpm fstype=nfs state=mounted
+  tags: xxx
