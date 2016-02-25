@@ -10,8 +10,6 @@
   shell: chown -R mysql.mysql /mydata
 - name: nfs start
   service: name=rpcbind state=started enabled=on
-- name: yum software
-  yum: name=libselinux-python state=present
 - name: mount data
   mount: name=/tmp/rpm src=192.168.31.8:/rpm fstype=nfs state=mounted
   tags: xxx
