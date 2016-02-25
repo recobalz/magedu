@@ -5,14 +5,12 @@
 - name: init mysql
   shell: /usr/local/mysql/scripts/mysql_install_db --user=mysql --basedir=/usr/local/mysql --datadir=/mydata/mariadb &
   tags: init
-- name: confile
-  copy: src={{ item }} dest=/etc/{{ item }}
+- name: conf
+  copy: src={{ item.file }} dest={{ item.dir }}
   with_items:
-    - my.cnf
-    - profile
-  tags: conf
-- name: cp init
-  shell: cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysqld
+    - {file: my.cnf,dir: /etc/}
+    - {file: profile,dir: /etc/} 
+    - {file: mysqld,dir: /etc/init.d/}
   tags: confile
 - name: sourceprofiled
   shell: source /etc/profile
