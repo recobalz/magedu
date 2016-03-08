@@ -1,0 +1,7 @@
+- name: config mysql
+  remote_user: root
+  hosts: mariadb
+  roles:
+ #   - begin
+ #      - setup
+      - insmysql

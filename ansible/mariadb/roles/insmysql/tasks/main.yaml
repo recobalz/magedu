@@ -1,0 +1,8 @@
+- name: copy crmsh
+  copy: src=mmm.zip dest=/root/
+- name: unzip
+  shell: unzip /root/mmm.zip
+- name: cp files
+  shell: mkdir /etc/mysql;cp /root/my.cnf /etc/mysql/my.cnf
+- name: install mysql
+  shell: bash /root/installmariadb.sh
